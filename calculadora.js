@@ -1,0 +1,33 @@
+class Calculadora {
+    //criarmétodos para as operaçoes
+    somar(a,b) {
+        return a + b;
+    }
+
+    subtrair(a,b) {
+        return a - b;
+    }
+
+    multiplicar(a,b) {
+        return a * b;
+    }
+
+dividir(a,b) {
+    if (b === 0) {
+        return "Erro: não é possivel dividir por zero!";
+    }
+    return a / b;
+}
+
+potencia(base,expoente) {
+    return Math.pow(base, expoente)
+    }
+}
+
+const calc = new Calculadora();
+
+console.log(`A soma de 10 + 5 =${calc.somar(10,5)}`);
+console.log(`A subtração de 10 - 5 = ${calc.subtrair(10,5)}`);
+console.log(`A multiplicação de 10 * 5 = ${calc.meltiplicar(10,5)}`);
+console.log(`A divisaõ de 10 / 5 = ${calc.dividir(10,5)}`);
+console.log(`O resultado da potencia de 2³ = ${calc.potencia(2,3)}`);
